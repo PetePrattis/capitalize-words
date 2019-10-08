@@ -8,7 +8,7 @@ and is one of a few such simple python programms neccessary to pass the class_
 
 > #### Description of project
 >
->>
+>>A program which accepts as an input a sentence and some key words and then returns the sentence with the key words capitalized.
 
 > #### About this project
 >
