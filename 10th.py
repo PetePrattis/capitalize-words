@@ -1,17 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 
+#Author Παναγιώτης Πράττης/Panagiotis Prattis
 
 '''
-Εργασία απο τον Νίκο Κοντόπουλο Π15056
-Άσκηση 10
-Γράψτε μία συνάρτηση η οποία παίρνει σαν όρισματα έναν τίτλο και κάποιες
-λέξεις οδηγούς. Σκοπός σας είναι χωρίς τη χρήση εξωτερικών βιβλιοθηκών
-να επιστρέψετε τον τίτλο σε "title case", όπου τα πρώτα γράμματα των
-λέξεων οδηγων δεν γίνονται κεφαλαία, εκτός αν είναι στην πρώτη θέση.
+A program which accepts as an input a sentence and some key words 
+and then returns the sentence with the key words capitalized.
 '''
 
-
+#goal is not to use any imported libraries
 
 
 def cap():
@@ -23,7 +20,7 @@ def cap():
     print keyw
     #print len(keyw)
         
-    #Εδώ μετατρέπω την πρόταση και τις λέξεις κλειδιά σε array με τις λέξεις
+    #make the sentence and the key words into two arrays of words
     stitle = title.split()
     skeyw = keyw.split()
     
@@ -40,22 +37,13 @@ def cap():
                 stitle[i]=stitle[i].title()
 
     print "This is the capitalized sentence"
-    #Εδώ μετατρέπω το array με τις capitalized λέξεις σε πρόταση
+    #convert array with capitalized letters into a string
     print ' '.join(stitle)
   
-                    
-#Εδώ καλώ την συνάρτηση
+#main                    
+#call the function
 cap();
 
 print "Press enter to exit"
 raw_input()        
-
-
-
-
-
-
-                 
-
-
 
